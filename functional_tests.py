@@ -1,7 +1,6 @@
 from selenium import webdriver
 import unittest
 
-
 class NewVisitorTest(unittest.TestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -14,7 +13,9 @@ class NewVisitorTest(unittest.TestCase):
         #Erin visits the website:
         self.browser.get('http://localhost:8000')
         #She notices that the title has 'To-Do' in it:
-        self.assertIn('To-Do', self.browser.title)
+        self.assertIn('To-Do lists', self.browser.title)
+        self.fail("Finish the tests!")
+
 
 
 #There is a text box to begin a todo list:
