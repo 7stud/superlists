@@ -1,0 +1,4 @@
+.*.s[a-w][a-z]
+*.pyc
+__pycache__
+db.sqlite3
